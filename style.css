@@ -147,19 +147,23 @@ section .title::after{
     width: 42px;
     background: rgb(88, 231, 224);;
     right: 30px;
+    /* this bottom is used to keep the button below */
     bottom: 10px;
     text-align: center;
     line-height: 45px;
     color: #fff;
-    z-index: 9999;
+    /* z index is used to set priority of the element */
+    z-index: 9999; 
     font-size: 30px;
     border-radius: 6px;
-    border-bottom-width: 2px;
+    /* border-bottom-width: 2px; */
     cursor: pointer;
+    /* opacity to hide button */
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: all 0.3s ease;
 }
+/* show is when we want to show that button */
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
@@ -222,7 +226,7 @@ section .title::after{
 }
 
 /* about section styling */
-
+/* 45% is screen share of that coloumn */
 .about .about-content .left{
     width: 45%;
 }
@@ -278,20 +282,17 @@ section .title::after{
     width: 30%;
     background: #222;
     text-align: center;
-    /* border-radius: 6px; */
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    /* margin-top: 20px; */
     
-    /* justify-content: center; */
 }
 .services .serv-content .card:hover{
     background: rgb(88, 231, 224);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
-    /* align-content: center; */
+    
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
@@ -371,20 +372,23 @@ section .title::after{
     top: 0;
     background: rgb(88, 231, 224);
 }
-.skills-content .right .html::before{
+.skills-content .right .c::before{
     width: 70%;
 }
-.skills-content .right .css::before{
+.skills-content .right .JAVA::before{
     width: 60%;
 }
-.skills-content .right .js::before{
+.skills-content .right .HTML::before{
     width: 50%;
 }
-.skills-content .right .php::before{
+.skills-content .right .css::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
-    width: 50%;
+.skills-content .right .servlet::before{
+    width: 30%;
+}
+.skills-content .right .JSP::before{
+    width: 30%;
 }
 
 
