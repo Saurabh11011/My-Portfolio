@@ -50,7 +50,7 @@ section{
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -275,13 +275,14 @@ section .title::after{
 
 
 .services .serv-content .card{
-    width: center;
+    width: 30%;
     background: #222;
     text-align: center;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* margin-top: 20px; */
     
     /* justify-content: center; */
 }
