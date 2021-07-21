@@ -133,6 +133,16 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+#icon{
+    width:30px;
+    cursor:pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin: 30px;
+}
 
 /* menu btn styling */
 .menu-btn{
@@ -184,6 +194,8 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    isolation: isolate;
+    
 }
 .home .max-width{
   width: 100%;
